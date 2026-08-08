@@ -59,3 +59,6 @@ class AccountTest {
             .isInstanceOf(ValidationException.class);
     }
 }
+
+// Test suite for Account domain logic: covers deposit, withdrawal,
+   // transfer between accounts, and rejection of overdrafts.
