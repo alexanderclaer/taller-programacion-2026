@@ -2,9 +2,6 @@ package com.tallerprogramacion.infrastructure;
 
 import com.tallerprogramacion.domain.Account;
 
-public interface AccountRepository {
-
-    Account findById(String accountId);
-
-    void save(Account account);
+public interface AccountRepository extends Repository<Account, String> {
+    // Inherits findById, save, findAll, deleteById from Repository<Account, String>
 }
